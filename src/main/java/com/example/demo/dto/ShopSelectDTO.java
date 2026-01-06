@@ -1,0 +1,19 @@
+package com.example.demo.dto;
+
+public class ShopSelectDTO {
+    private Integer id;
+    private String label;
+
+    public ShopSelectDTO(Integer id, String label) {
+        this.id = id;
+        this.label = label;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+}

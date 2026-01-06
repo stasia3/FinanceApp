@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finance App</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="admin-menu-container"></div>
+<h1>Finance Data - Purchase</h1>
+
+<!-- Form to add new item -->
+<form id="add-item-form">
+<!--    <input type="text" id="idShop" placeholder="Shop Name" required>-->
+    <select id="shopSelect" required>
+        <option value="">Select shop</option>
+    </select>
+    <input type="date" id="date" placeholder="Date..." required>
+    <input type="text" id="discountTotal" placeholder="Discount: 00,00" required>
+    <input type="text" id="paymentType" placeholder="cash/card" required>
+    <input type="text" id="priceTotal" placeholder="Total: 00,00" required>
+    <input type="text" id="TVATotal" placeholder="TVA: 00,00" required>
+    <button type="submit">Add Item</button>
+</form>
+
+<table id="data-table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Shop</th>
+        <th>Date</th>
+        <th>Discount total</th>
+        <th>Payment type</th>
+        <th>Price total</th>
+        <th>TVA total</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+    <script src="/js/menu.js"></script>
+<script src="/js/admin/shop.js"></script>
+<script src="/js/admin/purchase.js"></script>
+</body>
+</html>

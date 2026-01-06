@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finance App</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="admin-menu-container"></div>
+<h1>Finance Data - Purchase - Item</h1>
+
+<!-- Form to add new item -->
+<form id="add-item-form">
+    <input type="text" id="quantity" placeholder="Quantity" required>
+    <input type="text" id="quantityUnit" placeholder="Quantity unit" required>
+    <input type="text" id="discountProcent" placeholder="Discount procent" required>
+    <input type="text" id="discountPrice" placeholder="Discount price" required>
+    <input type="text" id="total" placeholder="Total: 00,00" required>
+    <input type="text" id="idItemPrice" placeholder="id Item Price" required>
+    <input type="text" id="idPurchase" placeholder="id Purchase" required>
+    <input type="text" id="currency" placeholder="currency" required>
+    <button type="submit">Add Item</button>
+</form>
+
+<table id="data-table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Quntity</th>
+        <th>Quantity Unit</th>
+        <th>Discount Procent</th>
+        <th>Discount Price</th>
+        <th>Total</th>
+        <th>Id Item - Price</th>
+        <th>Id Purchase</th>
+        <th>Currency</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="/js/menu.js"></script>
+<script src="../js/admin/purchaseItem.js"></script>
+</body>
+</html>
